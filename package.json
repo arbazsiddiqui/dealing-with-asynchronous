@@ -1,0 +1,11 @@
+{
+  "name": "dealing-with-hell",
+  "version": "1.0.0",
+  "description": "a guide to dealing with asynchronousity",
+  "main": "callbacks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
