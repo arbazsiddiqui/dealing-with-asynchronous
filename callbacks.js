@@ -1,7 +1,7 @@
 var step1 = function (butter, bread, callback) {
   setTimeout(function () {
     var msg1 = "Thickly "+ butter +" your "+ bread+". ";
-    console.log("Step1 completed");
+    console.log(msg1);
     return callback(msg1)
   }, 2000);
 
@@ -9,48 +9,54 @@ var step1 = function (butter, bread, callback) {
 
 var step2 = function (msg, cream, callback) {
   setTimeout(function () {
-    var msg2 = msg + "Thinly spread on your salad " + cream+". ";
-    console.log("Step2 completed");
+    temp = "Thinly spread on your salad " + cream+". ";
+    var msg2 = msg + temp;
+    console.log(temp);
     return callback(msg2)
   }, 2000);
 };
 
 var step3 = function (msg, tomato, callback) {
   setTimeout(function () {
-    var msg3 = msg + "Slice your " + tomato + " very thinly and spread evenly over one slice of bread. ";
-    console.log("Step3 completed");
+    temp = "Slice your " + tomato + " very thinly and spread evenly over one slice of bread. ";
+    var msg3 = msg + temp;
+    console.log(temp);
     return callback(msg3)
   }, 2000);
 };
 
 var step4 = function (msg, cheese, callback) {
   setTimeout(function () {
-    var msg4 = msg + "Slice each " + cheese+ " thinly.";
-    console.log("Step4 completed");
+    temp = "Slice each " + cheese+ " thinly.";
+    var msg4 = msg + temp;
+    console.log(temp);
     return callback(msg4)
   }, 2000);
 };
 
 var step5 = function (msg, tomato, cheese, callback) {
   setTimeout(function () {
-    var msg5 = msg + "On top of the " + tomato + ", put a slice of one "+ cheese+". ";
-    console.log("Step5 completed");
+    temp = "On top of the " + tomato + ", put a slice of one "+ cheese+". ";
+    var msg5 = msg + temp;
+    console.log(temp);
     return callback(msg5)
   }, 2000);
 };
 
 var step6 = function (msg, tomato, cheese, callback) {
   setTimeout(function () {
-    var msg6 = msg + "Carefully lay the second slice of bread onto the one with "+ cheese + " and " + tomato + ". ";
-    console.log("Step6 completed");
+    temp = "Carefully lay the second slice of bread onto the one with "+ cheese + " and " + tomato + ". ";
+    var msg6 = msg + temp;
+    console.log(temp);
     return callback(msg6)
   }, 2000);
 };
 
 var step7 = function (msg) {
   setTimeout(function () {
-    msg7 = msg + "Cut into small triangles.";
-    console.log("Step7 completed");
+    temp = "Cut into small triangles.";
+    msg7 = msg + temp;
+    console.log(temp);
     console.log(msg7)
   }, 2000);
 };

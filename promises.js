@@ -2,9 +2,9 @@ var step1 = function (bread, butter) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg = "Thickly " + butter + " your " + bread;
-        console.log("Step1 complete");
-        resolve(msg)
+        var msg1 = "Thickly " + butter + " your " + bread;
+        console.log(msg1);
+        resolve(msg1)
       }, 2000);
     }
   );
@@ -14,8 +14,9 @@ var step2 = function (cream, msg) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg2 = msg + ". Thinly spread on your salad " + cream + ". ";
-        console.log("Step2 complete");
+        temp = "Thinly spread on your salad " + cream+". ";
+        var msg2 = msg + temp;
+        console.log(temp);
         resolve(msg2)
       }, 2000);
     }
@@ -26,8 +27,9 @@ var step3 = function (tomato, msg) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg3 = msg + "Slice your " + tomato + " very thinly and spread evenly over one slice of bread. ";
-        console.log("Step3 complete");
+        temp = "Slice your " + tomato + " very thinly and spread evenly over one slice of bread. ";
+        var msg3 = msg + temp;
+        console.log(temp);
         resolve(msg3)
       }, 2000);
     }
@@ -38,8 +40,9 @@ var step4 = function (cheese, msg) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg4 = msg + "Slice each " + cheese + " thinly.";
-        console.log("Step4 complete");
+        temp = "Slice each " + cheese+ " thinly.";
+        var msg4 = msg + temp;
+        console.log(temp);
         resolve(msg4)
       }, 2000);
     }
@@ -50,8 +53,9 @@ var step5 = function (tomato, cheese, msg) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg5 = msg + "On top of the " + tomato + ", put a slice of one " + cheese + ". ";
-        console.log("Step5 complete");
+        temp = "On top of the " + tomato + ", put a slice of one "+ cheese+". ";
+        var msg5 = msg + temp;
+        console.log(temp);
         resolve(msg5)
       }, 2000);
     }
@@ -62,8 +66,9 @@ var step6 = function (tomato, cheese, msg) {
   return new Promise(
     function (resolve, reject) {
       setTimeout(function () {
-        var msg6 = msg + "Carefully lay the second slice of bread onto the one with " + cheese + " and " + tomato + ". ";
-        console.log("Step6 complete");
+        temp = "Carefully lay the second slice of bread onto the one with "+ cheese + " and " + tomato + ". ";
+        var msg6 = msg + temp;
+        console.log(temp);
         resolve(msg6)
       }, 2000);
     }
@@ -72,8 +77,9 @@ var step6 = function (tomato, cheese, msg) {
 
 var step7 = function (msg) {
   setTimeout(function () {
-    msg7 = msg + "Cut into small triangles.";
-    console.log("Step7 complete");
+    temp = "Cut into small triangles.";
+    msg7 = msg + temp;
+    console.log(temp);
     console.log(msg7)
   }, 2000);
 };
